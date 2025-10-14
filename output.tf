@@ -7,4 +7,3 @@ output "rds_endpoint" {
   description = "RDS MySQL Endpoint"
   value       = module.rds.db_endpoint
 }
-

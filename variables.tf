@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  default = "Anisto"
+  default = "sriaws1"
 }
 
 variable "db_username" {
