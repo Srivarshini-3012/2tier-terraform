@@ -1,7 +1,10 @@
 output "ec2_public_ip" {
-  value = aws_instance.login_page.public_ip
+  description = "Public IP of EC2 Instance"
+  value       = module.ec2.public_ip
 }
 
 output "rds_endpoint" {
-  value = aws_db_instance.login_db.endpoint
+  description = "RDS MySQL Endpoint"
+  value       = module.rds.db_endpoint
 }
+

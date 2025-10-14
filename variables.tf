@@ -1,19 +1,20 @@
-variable "rds_endpoint" {
-  description = "The RDS endpoint"
-  type        = string
+variable "ami_id" {
+  default = "ami-02d26659fd82cf299"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  default = "Anisto"
 }
 
 variable "db_username" {
-  description = "The username for the RDS DB instance"
-  type        = string
+  default = "admin"
 }
 
 variable "db_password" {
-  description = "The password for the RDS DB instance"
-  type        = string
+  default = "Test.1234.."
 }
 
-variable "db_name" {
-  description = "The name of the database"
-  type        = string
-}
